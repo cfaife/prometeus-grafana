@@ -11,8 +11,11 @@ services:
       - ./data/prometheus:/prometheus
     ports:
       - 9090:9090
+    networks:
+      - monitoring-net
 
   grafana:
+    user: root
     image: grafana/grafana
     volumes:
       - ./data/grafana:/var/lib/grafana
@@ -20,3 +23,8 @@ services:
       - 3000:3000
     depends_on:
       - prometheus
+    networks:
+      - monitoring-net
+
+networks:
+  monitoring-net:

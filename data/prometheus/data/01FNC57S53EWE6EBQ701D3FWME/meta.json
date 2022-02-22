@@ -1,0 +1,17 @@
+{
+	"ulid": "01FNC57S53EWE6EBQ701D3FWME",
+	"minTime": 1637755200000,
+	"maxTime": 1637762400000,
+	"stats": {
+		"numSamples": 202538,
+		"numSeries": 629,
+		"numChunks": 1887
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FNC57S53EWE6EBQ701D3FWME"
+		]
+	},
+	"version": 1
+}
